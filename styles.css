@@ -1,0 +1,179 @@
+/*
+Color Styles:
+primary background: #756867, rgba(117, 104, 103, 1); Wood Veener
+primary font-color: #353c3f; Charcoal
+
+secondary (font-) color: #d5d6d2; Sand Dollar
+
+accent color: #ff8d3f; Orange
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: #353c3f;
+}
+
+/* Heading Styles */
+/*
+h4 {
+  margin: 16px;
+}
+
+h3 {
+  margin: 12px;
+}
+
+h2 {
+  margin: 8px;
+}
+
+h1 {
+  margin: 4px;
+}
+*/
+
+section {
+  margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+.header {
+  background-color: #ff8d3f;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__heading {
+}
+
+.heading__name {
+  font-size: 4rem;
+}
+
+.heading_navigation {
+  font-size: 2rem;
+}
+
+.navigation {
+  /* align-self: flex-end; */
+}
+
+.navigation > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navigation li {
+  margin: 4px 0;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.navigation a:hover {
+  color: pink;
+}
+
+.section__about-me {
+  margin-top: 0;
+  padding-top: 60px;
+  background: linear-gradient(
+    180deg,
+    rgba(117, 104, 103, 0.9) 40%,
+    rgba(255, 255, 255, 1) 85%
+  );
+}
+
+.about-me__first-impression {
+  position: relative;
+  display: flex;
+}
+
+.about-me__image-wrapper {
+  margin-left: 10px;
+  height: 210px;
+  width: 210px;
+  overflow: hidden;
+  border: solid 2px #ff8d3f;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #353c3f;
+}
+
+.about-me__image {
+  width: 280px;
+  transform: translate(-36px, -34px);
+}
+
+.about-me__arrow {
+  position: absolute;
+  width: 60px;
+  top: 6px;
+  left: 198px;
+}
+
+.description {
+  /* TODO: how to keep size of img without .description width */
+  width: 70%;
+  margin-left: 32px;
+}
+
+.description__heading {
+  color: #d5d6d2;
+  margin-bottom: 8px;
+  padding-left: 8px;
+}
+
+.description__text {
+  padding: 8px;
+  /* border-left: solid 4px #ff8d3f; */
+  background-color: #d5d6d2;
+  border-radius: 8px 32px 32px 8px;
+  border-radius: 16px;
+  box-shadow: 2px 2px 12px #353c3f, inset 0 0 4px #353c3f;
+}
+
+.about-me__timeline {
+  margin: 80px 20px;
+}
+
+.timeline-heading {
+  text-decoration: underline #ff8d3f;
+}
+
+.timeline-text-wrapper {
+  display: flex;
+}
+
+.timeline-text {
+  margin-left: 82px;
+  display: flex;
+  flex-direction: column;
+  transform: rotate(-90deg);
+  list-style: url(/assets/timeline-line.png);
+}
+
+.timeline-text li {
+  text-align: start;
+}
+
+.text-1 {
+}
+
+.text-2 {
+}
+
+.text-3 {
+}

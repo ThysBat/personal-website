@@ -1,45 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-scroll="600">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Illies - Personal Website</title>
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>David Illies</h1>
-      <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#contact">Contact</a>
-        <a href="#skills">Skills</a>
+    <header class="header">
+      <div class="header__heading">
+        <h1 class="heading__name">David Illies</h1>
+        <h2 class="heading_navigation">About Me</h2>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li>
+            <a href="#about-me"><span>About Me</span></a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+        </ul>
       </nav>
-      <img
-        alt="An image of me holding a card saying: 'I like to dance'"
-        src="/assets/i-like-to-dance.jpg"
-        style="width: 18rem"
-      />
     </header>
+
     <main>
-      <section id="about-me">
-        <h2>About Me</h2>
-        <p>Here comes a short description of myself..</p>
-        <table>
-          <tbody>
-            <tr>
-              <td>07. November 1996</td>
-              <td>Juli 2015</td>
-              <td>Januar 2016</td>
-              <td>Oktober</td>
-              <td>September 2017</td>
-              <td>Oktober 2020</td>
-              <td>September 2021</td>
-              <td>Februar 2023</td>
-              <td>April</td>
-            </tr>
-          </tbody>
-        </table>
-        <img alt="a timeline" src="/assets/timeline.png" />
+      <section id="about-me" class="section__about-me">
+        <div class="about-me__first-impression">
+          <div class="about-me__image-wrapper">
+            <img
+              alt="An image of me holding a card saying: 'I like to dance'"
+              src="/assets/i-like-to-dance.jpg"
+              class="about-me__image"
+            />
+          </div>
+          <img
+            class="about-me__arrow"
+            src="/assets/arrow1.png"
+            alt="an arrow"
+          />
+          <div class="description">
+            <h2 class="description__heading">That's me, David</h2>
+            <p class="description__text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua.
+            </p>
+          </div>
+        </div>
+        <div class="about-me__timeline">
+          <h3 class="timeline-heading">A timeline of my life</h3>
+          <div class="timeline-text-wrapper">
+            <ul class="timeline-text">
+              <li class="text-1">07. November 1996</li>
+              <li class="text-2">Juli 2015</li>
+              <li class="text-3">Januar 2016</li>
+              <li class="text-4">Oktober</li>
+              <li class="text-5">September 2017</li>
+              <li class="text-6">Oktober 2020</li>
+              <li class="text-7">September 2021</li>
+              <li class="text-8">Februar 2023</li>
+              <li>April</li>
+            </ul>
+          </div>
+          <img
+            class="timeline-img"
+            alt="a timeline"
+            src="/assets/timeline.png"
+          />
+        </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
